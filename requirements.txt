@@ -1,0 +1,5 @@
+azure-functions
+azure-identity
+azure-ai-projects
+requests
+openpyxl
