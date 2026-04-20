@@ -49,7 +49,7 @@ def sync_sprint_data(timer: func.TimerRequest) -> None:
 # ── HTTP Trigger (manual / testing) ──────────────────────────────────────────
 
 @app.function_name(name="SyncSprintDataHttp")
-@app.route(route="sync", auth_level=func.AuthLevel.FUNCTION)
+@app.route(route="sync", auth_level=func.AuthLevel.ANONYMOUS)
 def sync_sprint_data_http(req: func.HttpRequest) -> func.HttpResponse:
     """Manual trigger for testing – POST /api/sync"""
     logging.info("Manual HTTP trigger invoked.")
